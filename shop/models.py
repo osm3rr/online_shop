@@ -42,5 +42,5 @@ class Product(models.Model):
             models.Index(fields=['-created_at']),
         ]
     def __str__(self) -> str:
-        return super().name
+        return self.name
     
